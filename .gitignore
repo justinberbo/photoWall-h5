@@ -1,0 +1,11 @@
+HELP.md
+.jar
+.DS_Store
+
+
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
+
