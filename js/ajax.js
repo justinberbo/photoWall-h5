@@ -5,7 +5,7 @@ function register1() {
   var password = $("#password").val();
   $.ajax({
     type: "post",
-    url: "http://localhost:8080/register",
+    url: "47.103.218.59:8091/register",
     data: {
       "name": name,
       "password": password
