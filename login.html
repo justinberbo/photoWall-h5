@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>登入页面</title>
+  <title>photoWall</title>
   <link rel="stylesheet" href="css/common/bootstrap.min.css">
   <link rel="stylesheet" href="css/login-common.css">
   <link rel="stylesheet" href="css/login-style.css">
@@ -29,24 +29,19 @@
 <!--      <P class="mb-5">指键铿锵落，不及细思量。</P>-->
 <!--      <P class="mb-5">bug千百个，comment无一行。</P>-->
 <!--      <P class="mb-5">休言敏捷易，做来断人肠.</P>-->
-
-      <form action="" method="post" class="sub
-				scribe-form">
         <div class="  form-section">
           <div class="col-md-7 col-sm-7 col-xs-7">
-            <input name="name" type="text"
+            <input name="email" type="email"
                    class="form-control" id="login_name"
-                   placeholder="Your Name..." required/>
+                   placeholder="Your Email..." required/>
             <input name="password" type="password" class="form-control" id="password" required/>
           </div>
           <div class="col-md-7 col-sm-7 col-xs-7">
-            <button type="submit" class="tm-btn-subscribe-register" onclick="register1()">注册</button>
-            <button type="submit" class="tm-btn-subscribe"onclick="ajax()">登入</button>
+            <button type="submit" class="tm-btn-subscribe-register" onclick="register()">注册</button>
+            <button type="submit" class="tm-btn-subscribe"onclick="login()">登入</button>
 
           </div>
         </div>
-      </form>
-
     </div>
   </div>
 

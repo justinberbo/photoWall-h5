@@ -1,5 +1,5 @@
+
 <!doctype html>
-<html>
 <head>
   <meta charset="utf-8">
   <title>网站</title>
@@ -18,6 +18,12 @@
       <ul class="mainNav" id="ControlDisplay">
         <li class="navIco2" id="clickNavIco2"><i class="icon-0317"></i></li>
         <li class="mclass"><a class="mn">网站首页</a></li>
+        <li class="mclass"><a class="mn">活动专区</a>
+          <ul>
+            <li><a href="">动漫</a>
+            <li><a href="">体育</a>
+          </ul>
+        </li>
         <li class="mclass"><a class="mn">关于人间岛</a>
           <ul>
             <li><a href="">其他项目1</a>
@@ -47,153 +53,167 @@
     <div class="searchF">
       <input type="text" name="key" class="textKey" placeholder="请输入关键词搜索" autocomplete="off">
       <div class="txt">高级站内搜索</div>
-      <input type="submit" class="soBut icon-0095" value="搜索">
+      <input type="submit"  onclick="seacher()" class="soBut icon-0095" value="搜索">
     </div>
   </div>
   <!---背景+搜索框+LOGO end--->
 
-  <!--培训项目 -->
+  <!--人物 -->
+<!--  <div class="hot">HOT</div>-->
   <div class="TrainItem">
-    <a href="" class="item">
-      <div class="ico"><img src="images/km-1.jpg"></div>
-      <div class="title">播音主持</div>
+    <a href="" class="item" id="item0">
+      <div class="ico"><img src="images/avt0.jpg"></div>
+      <div class="title">作者</div>
     </a>
-    <a href="" class="item">
-      <div class="ico"><img src="images/km-2.jpg"></div>
-      <div class="title">电视编导</div>
+    <a href="" class="item" id="item1">
+      <div class="ico"><img src="images/avt1.jpeg"></div>
+      <div class="title">周杰伦</div>
     </a>
-    <a href="" class="item">
-      <div class="ico"><img src="images/km-3.jpg"></div>
-      <div class="title">电影创作</div>
+
+    <a href="" class="item" id="item2">
+      <div class="ico"><img src="images/avt2.jpeg"></div>
+      <div class="title">国漫</div>
     </a>
-    <a href="" class="item">
-      <div class="ico"><img src="images/km-4.jpg"></div>
-      <div class="title">艺术管理</div>
+
+    <a href="" class="item" id="item3">
+      <div class="ico"><img src="images/avt3.jpeg"></div>
+      <div class="title">蒙奇·D·路飞</div>
     </a>
-    <a href="" class="item">
-      <div class="ico"><img src="images/km-5.jpg"></div>
-      <div class="title">电视制作</div>
+
+    <a href="" class="item" id="item4">
+      <div class="ico"><img src="images/avt4.jpeg"></div>
+      <div class="title">晓组织</div>
     </a>
-    <a href="" class="item">
-      <div class="ico"><img src="images/km-6.jpg"></div>
-      <div class="title">广告设计</div>
+
+    <a href="" class="item" id="item5">
+      <div class="ico"><img src="images/avt5.jpg"></div>
+      <div class="title">罗罗诺亚·索隆</div>
     </a>
-    <a href="" class="item">
-      <div class="ico"><img src="images/km-7.jpg"></div>
-      <div class="title">音乐制作</div>
+
+    <a href="" class="item" id="item6">
+      <div class="ico"><img src="images/avt6.jpg"></div>
+      <div class="title">Michael Jordan</div>
     </a>
-    <a href="" class="item">
-      <div class="ico"><img src="images/km-8.jpg"></div>
-      <div class="title">专业配音</div>
+    <a href="" class="item" id="item7">
+      <div class="ico"><img src="images/avt7.jpeg"></div>
+      <div class="title">雷姆</div>
     </a>
+
+<!--    <a href="" class="item" id="item8">-->
+<!--      <div class="ico"><img src="images/km-8.jpg"></div>-->
+<!--      <div class="title">武磊</div>-->
+
+<!--    </a>-->
   </div>
   <!--培训项目 end-->
 
   <!--视频 -->
   <div class="videoCon">
-    <div class="name">佳之翼培训视频</div>
+    <div class="name">推荐视频</div>
     <div class="videoF">
-      <iframe name="myiframe" id="myrame" src="https://v.qq.com/iframe/preview.html?vid=q0630wbcotq"
-              frameborder="0" align="left" width="700" height="430" scrolling="no"></iframe>
+<!--      <iframe name="myiframe" id="myrame" src="https://www.bilibili.com/video/BV1HW411T7ba/"-->
+<!--              frameborder="0" align="left" width="700" height="430" scrolling="no"></iframe>-->
+      <iframe src="//player.bilibili.com/player.html?aid=21551656&bvid=BV1HW411T7ba&cid=35492347&page=1"
+              scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
     </div>
   </div>
   <!--视频 end-->
 
   <!----热门内容---->
   <div class="txtList">
-    <h2>热门内容</h2>
+    <h2>热门图集</h2>
     <div id="tabBox">
       <div id="tabMenu_content">
         <div class="list block">
           <!--单条新闻 --->
           <a href="" class="item">
-            <span class="pic"><img src="images/news-02.jpg"></span>
+            <span class="pic"><img src="http://codeeyes.cn/wp-content/uploads/2020/07/ar.jpg"></span>
             <span class="info tuw">
-                        	<h2>冲田杏梨幸福晒婚后孕照，苍井空却怀孕无望，让人忍不住心疼</h2>
-                            <h3>关于冲田杏梨和苍井空两人宣布婚讯后，网友们虽然表示担心和不舍，但还是为她们送上了最热忱的祝福。</h3>
+                        	<h2>曾繁日，你硬一点行不行？！</h2>
+                            <h3>杜锋日常生气合集</h3>
                         </span>
             <span class="ViceInfo">
-                        	<em>发布日期：2018年05月05日 19:06</em>
+                        	<em>发布日期：2020年06月08日 19:06</em>
                             <em>阅读数：184</em>
-                            <em>所属分类：相关资讯</em>
-                            <i class="icon-0252"></i>
+                            <em>所属分类：cba，篮球，体育，广东宏远</em>
+
               </sapn>
           </a>
           <a href="" class="item">
-            <span class="pic"><img src="images/news-03.jpg"></span>
+            <span class="pic"><img src="https://zhuangzh-bucket.oss-cn-beijing.aliyuncs.com/pic/photoWall/jlwxdq.jpeg?Expires=1594993514&OSSAccessKeyId=TMP.3KjJn6NRJYuQ4qPM48i3g5rZJpGmyv5Z24nVzCx4j3WFZway7XnfH7pbaNqGWaSoy6dGVE9RR6v4nAo5fFo2nH2kjyL6ec&Signature=YNeE7khkfhrZShVyrfIiKoG7p3k%3D"></span>
             <span class="info tuw">
-                        	<h2>她被王晶捧红，身材比柳岩火爆，今46岁未婚依旧气质优雅！</h2>
-                            <h3>说起张文慈，可能现在很多人已经忘记她了，而对于现在的年轻人来说是陌生的，不过她也曾人气很旺，还是很多人的梦中情人。</h3>
+                        	<h2>教练我想打球</h2>
+                            <h3></h3>
                         </span>
             <span class="ViceInfo">
-                        	<em>发布日期：2018年05月05日 19:06</em>
+                        	<em>发布日期：2020年07月15日 19:06</em>
                             <em>阅读数：261</em>
-                            <em>所属分类：相关资讯</em>
+                            <em>所属分类：篮球，动漫</em>
                             <i class="icon-0252"></i>
               </sapn>
           </a>
           <a href="" class="item">
-            <span class="pic"><img src="images/news-04.jpg"></span>
+            <span class="pic"><img src="https://zhuangzh-bucket.oss-cn-beijing.aliyuncs.com/pic/photoWall/hs.jpeg?Expires=1594993917&OSSAccessKeyId=TMP.3KjJn6NRJYuQ4qPM48i3g5rZJpGmyv5Z24nVzCx4j3WFZway7XnfH7pbaNqGWaSoy6dGVE9RR6v4nAo5fFo2nH2kjyL6ec&Signature=eizNCaXBMX%2BH%2FlxHf4E8nMaM3HQ%3D"></span>
             <span class="info tuw">
-                        	<h2>北京财贸职业学院召开2018年教学、科研类项目启动建设暨培训会</h2>
-                            <h3>4月20日下午，北京财贸职业学院组织召开了2018年教学、科研类项目启动建设暨培训会, 纪委书记胡庆平、副院长李宇红出席会议并讲话，教务处、科研处、后勤与资产管理处、信息化与教育技术中心、财务处、审计处相关负责人、2018年各部门教学类项目负责人</h3>
+                        	<h2></h2>
+                            <h3>如今火神离去诚凛算是攻击力大减，在想战胜奇迹的世代几率近乎微乎其微，虽说其余球员的实力也慢慢逼近了无冕的五将，但与奇迹时代还是有着本质的区别，为此离开了火神的诚凛还有着很长的一段路需要走</h3>
                         </span>
             <span class="ViceInfo">
                         	<em>发布日期：2018年05月05日 19:06</em>
                             <em>阅读数：26</em>
-                            <em>所属分类：相关资讯</em>
+                            <em>所属分类：动漫，日漫，篮球</em>
                             <i class="icon-0252"></i>
               </sapn>
           </a>
           <a href="" class="item">
                         <span class="info now">
-                        	<h2>福瑞股份王宝恩肝纤维化研究基金线上培训启动！</h2>
-                            <h3>福瑞股份肝病学术界泰斗庄辉、中国肝炎防治基金会常务副理事长兼秘书长杨希忠和首都医科大学附属北京友谊医院贾继东教授对王宝恩肝纤维化研究基金线上科研与临床培训给出了期许</h3>
+                        	<h2>贝蒂的动容透露线索，强欲魔女首次登场</h2>
+                            <h3>本周《从零开始的异世界生活》动画更新到了第二集，跟注重感情戏的首集相比，这一集不仅可以说是爆点满满，而且伏笔众多，为之后的剧情展开提供了非常重要的帮助。</h3>
                         </span>
             <span class="ViceInfo">
-                        	<em>发布日期：2018年05月05日 19:06</em>
+                        	<em>发布日期：2020年07月18日 </em>
                             <em>阅读数：26</em>
-                            <em>所属分类：相关资讯</em>
+                            <em>所属分类：动漫，日漫</em>
                             <i class="icon-0252"></i>
               </sapn>
           </a>
-          <a href="" class="item">
-            <span class="pic"><img src="images/km-3.jpg"></span>
-            <span class="info tuw">
-                        	<h2>空姐飞机上偶遇彭于晏 亲密合照大喊：他今晚是我的空姐飞机上偶遇彭于晏 亲密合照大喊</h2>
-                            <h3>对于追星的人来说，有机会见到自己的偶像应该是最幸福的事情了，如果能和偶像一起拍张照片，那真是要激动地上天了呀！，有机会见到自己的偶像应该是最幸福的事情了，如果能和偶像一起拍张照片，那真是要激动地上天了呀！</h3>
-                        </span>
-            <span class="ViceInfo">
-                        	<em>发布日期：2018年05月05日 19:06</em>
-                            <em>阅读数：26</em>
-                            <em>所属分类：相关资讯</em>
-                            <i class="icon-0252"></i>
-              </sapn>
-          </a>
-          <a href="" class="item">
-            <span class="pic"><img src="images/news-05.jpg"></span>
-            <span class="info tuw">
-                        	<h2>广州商学院举办中青年教师科研能力提升专场培训</h2>
-                            <h3>为进一步活跃广州商学院的科研氛围，有效提升作为应用型高校中青年教师胜任力之一的科研工作能力与水平，4月19日下午，广州商学院人事处、评建与督导办公室共同组织关于中青年教师如何做好科研工作的专项辅导讲座</h3>
-                        </span>
-            <span class="ViceInfo">
-                        	<em>发布日期：2018年05月05日 19:06</em>
-                            <em>阅读数：26</em>
-                            <em>所属分类：相关资讯</em>
-                            <i class="icon-0252"></i>
-              </sapn>
-          </a>
-          <a href="" class="item">
-                        <span class="info now">
-                        	<h2>石碁片区召开中小幼 德育工作教科研培训</h2>
-                            <h3>石碁教育指导中心副主任林惠先作了片区德育工作布置并提出了具体的工作要求。接着，由姜涛教授对文化德育方案进行讲评。</h3>
-                        </span>
-            <span class="ViceInfo">
-                        	<em>发布日期：2018年05月05日 19:06</em>
-                            <em>阅读数：26</em>
-                            <em>所属分类：相关资讯</em>
-                            <i class="icon-0252"></i>
-              </sapn>
+<!--          <a href="" class="item">-->
+<!--            <span class="pic"><img src="images/km-3.jpg"></span>-->
+<!--            <span class="info tuw">-->
+<!--                        	<h2>空姐飞机上偶遇彭于晏 亲密合照大喊：他今晚是我的空姐飞机上偶遇彭于晏 亲密合照大喊</h2>-->
+<!--                            <h3>对于追星的人来说，有机会见到自己的偶像应该是最幸福的事情了，如果能和偶像一起拍张照片，那真是要激动地上天了呀！，有机会见到自己的偶像应该是最幸福的事情了，如果能和偶像一起拍张照片，那真是要激动地上天了呀！</h3>-->
+<!--                        </span>-->
+<!--            <span class="ViceInfo">-->
+<!--                        	<em>发布日期：2018年05月05日 19:06</em>-->
+<!--                            <em>阅读数：26</em>-->
+<!--                            <em>所属分类：相关资讯</em>-->
+<!--                            <i class="icon-0252"></i>-->
+<!--              </sapn>-->
+<!--          </a>-->
+<!--          <a href="" class="item">-->
+<!--            <span class="pic"><img src="images/news-05.jpg"></span>-->
+<!--            <span class="info tuw">-->
+<!--                        	<h2>广州商学院举办中青年教师科研能力提升专场培训</h2>-->
+<!--                            <h3>为进一步活跃广州商学院的科研氛围，有效提升作为应用型高校中青年教师胜任力之一的科研工作能力与水平，4月19日下午，广州商学院人事处、评建与督导办公室共同组织关于中青年教师如何做好科研工作的专项辅导讲座</h3>-->
+<!--                        </span>-->
+<!--            <span class="ViceInfo">-->
+<!--                        	<em>发布日期：2018年05月05日 19:06</em>-->
+<!--                            <em>阅读数：26</em>-->
+<!--                            <em>所属分类：相关资讯</em>-->
+<!--                            <i class="icon-0252"></i>-->
+<!--              </sapn>-->
+<!--          </a>-->
+<!--          <a href="" class="item">-->
+<!--                        <span class="info now">-->
+<!--                        	<h2>石碁片区召开中小幼 德育工作教科研培训</h2>-->
+<!--                            <h3>石碁教育指导中心副主任林惠先作了片区德育工作布置并提出了具体的工作要求。接着，由姜涛教授对文化德育方案进行讲评。</h3>-->
+<!--                        </span>-->
+<!--            <span class="ViceInfo">-->
+<!--                        	<em>发布日期：2018年05月05日 19:06</em>-->
+<!--                            <em>阅读数：26</em>-->
+<!--                            <em>所属分类：相关资讯</em>-->
+<!--                            <i class="icon-0252"></i>-->
+<!--              </sapn>-->
           </a>
         </div>
       </div>
@@ -243,8 +263,33 @@
   <img src="images/bj.jpg" class="BackgroundImg">
 </div>
 
+<script>
+
+  function seacher(){
+    // seacheInti()
+    var array=[1,2,3,4,5,6,7,8,9];
+    alert("开始");
+    var item=0;
+    $.each(array,function(i,iteration){
+       item++;
+
+    })
+    alert(item)
+switch (item) {
+  case 0:alert("没有查到数据");break;
+  case 1:$("#item5").css('display','none');
+  case 2:$("#item6").css('display','none');
+  case 3:$("#item3").css('display','none');
+  case 4:$("#item2").css('display','none');
+  case 5:$("#item7").css('display','none');
+  case 6:$("#item1").css('display','none');
+  case 7:$("#item8").css('display','none');
 
 
+}
+  }
+
+</script>
 
 </body>
 </html>
