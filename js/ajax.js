@@ -1,3 +1,4 @@
+// 注册
 function register() {
 
   var email = $("#login_name").val();
@@ -38,7 +39,7 @@ function register() {
   }
 
 }
-
+// 登入
 function login() {
   var email = $("#login_name").val();
   var password = $("#password").val();
@@ -74,19 +75,20 @@ function login() {
     });
   }
 }
-
-function getFriends(userId){
+// 搜索
+function getPersonage(condition){
   $.ajax({
+    async: false,
     type: "post",
-    url: "http://localhost/api/getFeriends",
+    url: "http://localhost/api/search",
     data: JSON.stringify({
-      "userId": userId,
+      "condition": condition,
     }),
     contentType: "application/json",
     dataType: "json",
     success: function (data) {
       if (data.success) {
-
+        return data.data
       } else {
         alert(data.returnMsg)
       }
@@ -95,5 +97,4 @@ function getFriends(userId){
       alert("错误")
     }
   });
-
 }

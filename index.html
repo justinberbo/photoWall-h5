@@ -8,6 +8,7 @@
   <link href="css/index-ipad-style.css" rel="stylesheet" type="text/css">
   <link href="css/index-mobile-style.css" rel="stylesheet" type="text/css">
   <script type="text/javascript" src="js/jquery.js"></script>
+
 </head>
 <body>
 <div class="OverallMain">
@@ -263,18 +264,18 @@
   <img src="images/bj.jpg" class="BackgroundImg">
 </div>
 
+<script type="text/javascript" src="js/ajax.js"></script>
 <script>
-
   function seacher(){
-    // seacheInti()
-    var array=[1,2,3,4,5,6,7,8,9];
-    alert("开始");
+    var condition=$(".textKey").val();
+    var array=getPersonage(condition);
     var item=0;
     $.each(array,function(i,iteration){
+      $("#item5").find(".title").
        item++;
 
+
     })
-    alert(item)
 switch (item) {
   case 0:alert("没有查到数据");break;
   case 1:$("#item5").css('display','none');
