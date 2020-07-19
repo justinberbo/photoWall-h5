@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -34,11 +34,16 @@
             <input name="email" type="email"
                    class="form-control" id="login_name"
                    placeholder="Your Email..." required/>
-            <input name="password" type="password" class="form-control" id="password" required/>
+            <input name="password" type="password" placeholder="password" class="form-control" id="password" required/>
           </div>
           <div class="col-md-7 col-sm-7 col-xs-7">
+            <div class="buttons">
             <button type="submit" class="tm-btn-subscribe-register" onclick="register()">注册</button>
-            <button type="submit" class="tm-btn-subscribe"onclick="login()">登入</button>
+            <button class="tm-btn-subscribe" onclick="function go() {
+               $(location).attr('href', '/photoWall/index.html');
+            }">随便逛逛</button>
+            <button type="submit" class="tm-btn-subscribe-login"onclick="login()">登入</button>
+            </div>
 
           </div>
         </div>
@@ -47,7 +52,7 @@
 
 </div>
 </body>
-<script src="js/jquery.js"></script>
+<script src="js/jquery.min.js"></script>
 <script src="js/particles.js"></script>
 <script src="js/login.js"></script>
 <script src="js/ajax.js"></script>

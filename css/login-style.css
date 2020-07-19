@@ -105,29 +105,53 @@ input:-webkit-autofill {
 .contact_email {
 	color: #FFFFFF;
 }
+.buttons{
+  margin: 15px auto;
+  padding: 10px;
+}
 .tm-btn-subscribe {
-	background-color: #006699;
-	border-radius: .5rem;
-    border-color: white;
-	padding: 0.75rem 1.6rem;
-    font-weight: 300;
-    font-size: 1.4rem;
-    cursor: pointer;
+  height: 60px;
+  width: 90px;
+  background-color: #20990f;
+  border-radius: .5rem;
+  border-color: white;
+  padding: 0.6rem 0.5rem;
+  font-size:0.5rem;
+  cursor: pointer;
 }
 
 .tm-btn-subscribe:hover {
+  background-color: #137873;
+}
+
+.tm-btn-subscribe-login {
+  height: 60px;
+  width: 90px;
+  margin-left: 10px;
+	background-color: #006699;
+	border-radius: .5rem;
+    border-color: white;
+	 padding: 0.2rem 1rem;
+    font-weight: 300;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.tm-btn-subscribe-login:hover {
     background-color: #055278;
 }
 
 .tm-btn-subscribe-register{
+  height: 60px;
+  width: 90px;
   background-color: #ca660c;
   border-radius: .5rem;
   border-color: white;
-  margin-right: 20px;
-  margin-left: 45px;
+  margin-right: 10px;
+  margin-left: 20px;
   padding: 0.75rem 1.6rem;
   font-weight: 300;
-  font-size: 1.4rem;
+  font-size: 1rem;
   cursor: pointer;
 }
 
@@ -218,7 +242,7 @@ input:-webkit-autofill {
 }
 .cb-slideshow li:nth-child(4) { 
     background-image: url(../images/back4.jpg);
-    animation-delay: 24s;
+    animation-delay: 10s;
 }
 /*.cb-slideshow li:nth-child(5) { */
 /*    background-image: url(/images/back5.jpg);*/
@@ -265,7 +289,5 @@ input:-webkit-autofill {
 @media screen and (max-width: 576px) { 
     .cb-slideshow li div h3 { font-size: 80px }
 	
-	.tm-btn-subscribe {
-		margin-top: 20px;
-	}
+
 }

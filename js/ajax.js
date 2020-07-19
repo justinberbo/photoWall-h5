@@ -98,3 +98,36 @@ function getPersonage(condition){
     }
   });
 }
+
+//搜索
+function search(){
+
+  var condition=$(".textKey").val();
+  // var array=getPersonage(condition);
+  var array=[{"name":"测试"},{"name":"雷姆"},{"name":"科比"},{"name":"路飞"},{"name":"路飞"},{"name":"路飞"}]
+  var item=0;
+  $.each(array,function(i,iteration){
+    item++;
+  })
+  switch (item) {
+    case 0:alert("没有查到数据");break;
+    case 1:$("#item5").css('display','none');
+    case 2:$("#item6").css('display','none');
+    case 3:$("#item3").css('display','none');
+    case 4:$("#item2").css('display','none');
+    case 5:$("#item7").css('display','none');
+    case 6:$("#item1").css('display','none');
+    case 7:$("#item8").css('display','none');
+
+  }
+  switch (item) {
+    case 7:  $("#item8 .title ").html(array[6].name);$("#item0 .ico img").attr("src","images/bj.jpg");
+    case 6:$("#item1 .title ").html(array[5].name);$("#item1 .ico img").attr("src","images/bj.jpg");
+    case 5:$("#item7 .title ").html(array[4].name);$("#item7 .ico img").attr("src","images/bj.jpg");
+    case 4:$("#item2 .title ").html(array[3].name);$("#item2 .ico img").attr("src","images/bj.jpg");
+    case 3:$("#item3 .title ").html(array[2].name);$("#item3 .ico img").attr("src","images/bj.jpg");
+    case 2:$("#item6 .title ").html(array[1].name);$("#item6 .ico img").attr("src","images/bj.jpg");
+    case 1:$("#item4 .title ").html(array[0].name);$("#item4 .ico img").attr("src","images/bj.jpg");
+  }
+
+}
