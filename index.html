@@ -172,53 +172,63 @@
 <!--手风琴样式2-->
   <h2 class="title-text hot">热门图集</h2>
   <div class="options">
-    <div class="option active" style="background:url(images/back1.jpg);">
+
+<!--    1-->
+    <div class="option " style="background:url(images/back1.jpg);">
       <div class="shadow"></div>
       <div class="label">
-        <div class="icon"> <i class="fas fa-walking"></i> </div>
+        <div class="icon"> 
+<!--          <i class="fas fa-walking"></i> -->
+          <img src="images/author/author1.jpg" height="40" width="40" style="border-radius: 50%">
+        </div>
         <div class="info">
-          <div class="main">这是标题</div>
-          <div class="sub">这是一段描述</div>
+          <div class="main">来自富冈义勇</div>
+          <div class="sub">你也想起舞吗..</div>
         </div>
       </div>
     </div>
+
+<!--    2-->
     <div class="option" style="background:url(images/back3.jpg);">
       <div class="shadow"></div>
       <div class="label">
-        <div class="icon"> <i class="fas fa-snowflake"></i> </div>
+        <div class="icon"> <img src=" images/author/author2.jpeg" height="40" width="40" style="border-radius: 50%"> </div>
         <div class="info">
-          <div class="main">这是标题</div>
-          <div class="sub">这是一段描述</div>
+          <div class="main">来自蝴蝶刃</div>
+          <div class="sub">我把我的梦想托付给你</div>
         </div>
       </div>
     </div>
-    <div class="option" style="background:url(images/back2.jpg);">
+<!--    3-->
+    <div class="option active" style="background:url(images/back2.jpg);">
       <div class="shadow"></div>
       <div class="label">
-        <div class="icon"> <i class="fas fa-tree"></i> </div>
+        <div class="icon"> <img src="images/avatar/avt0.jpg" height="40" width="40" style="border-radius: 50%"></div>
         <div class="info">
-          <div class="main">这是标题</div>
-          <div class="sub">这是一段描述</div>
+          <div class="main">来自作者</div>
+          <div class="sub">少儿不宜，你懂的</div>
         </div>
       </div>
     </div>
+<!--    4-->
     <div class="option" style="background:url(images/back4.jpg);">
       <div class="shadow"></div>
       <div class="label">
-        <div class="icon"> <i class="fas fa-tint"></i> </div>
+        <div class="icon"> <img src="images/author/author4.jpg" height="40" width="40" style="border-radius: 50%"> </div>
         <div class="info">
-          <div class="main">这是标题</div>
-          <div class="sub">这是一段描述</div>
+          <div class="main">来自帅气的伍六七</div>
+          <div class="sub">潮流发型大全</div>
         </div>
       </div>
     </div>
+<!--    5-->
     <div class="option" style="background:url(images/back3.jpg);">
       <div class="shadow"></div>
       <div class="label">
-        <div class="icon"> <i class="fas fa-sun"></i> </div>
+        <div class="icon"> <img src="images/author/author3.jpg" height="40" width="40" style="border-radius: 50%"> </div>
         <div class="info">
-          <div class="main">这是标题</div>
-          <div class="sub">这是一段描述</div>
+          <div class="main">来自梅花十三</div>
+          <div class="sub">海滩泳装..</div>
         </div>
       </div>
     </div>
@@ -260,7 +270,7 @@
 
 <div class="FullWeb pdis">
   <div class="GlobalMask"></div>
-  <img src="images/back2.jpg" class="BackgroundImg">
+  <img src="images/back/b1.jpg" class="BackgroundImg">
 </div>
 
 
@@ -284,6 +294,12 @@
   });
 </script>
 <script type="text/javascript" src="js/ajax.js"></script>
+<script>
+  window.onload=function () {
+    var  id=localStorage.getItem("uuid")
+    alert(id)
+  };
 
+</script>
 </body>
 </html>

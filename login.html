@@ -39,9 +39,7 @@
           <div class="col-md-7 col-sm-7 col-xs-7">
             <div class="buttons">
             <button type="submit" class="tm-btn-subscribe-register" onclick="register()">注册</button>
-            <button class="tm-btn-subscribe" onclick="function go() {
-               $(location).attr('href', '/photoWall/index.html');
-            }">随便逛逛</button>
+            <button class="tm-btn-subscribe" onclick="go()"><a href="index.html">随便逛逛</a></button>
             <button type="submit" class="tm-btn-subscribe-login"onclick="login()">登入</button>
             </div>
 
@@ -56,4 +54,9 @@
 <script src="js/particles.js"></script>
 <script src="js/login.js"></script>
 <script src="js/ajax.js"></script>
+<script>function go() {
+  localStorage.setItem("userToken","")
+    $(location).attr('href', '/photoWall/index.html');
+
+}</script>
 </html>

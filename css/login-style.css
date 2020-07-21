@@ -212,11 +212,11 @@ input:-webkit-autofill {
     opacity: 0;
     z-index: 0;
     -webkit-backface-visibility: hidden;
-    -webkit-animation: imageAnimation 72s linear infinite 0s;
-    -moz-animation: imageAnimation 72s linear infinite 0s;
-    -o-animation: imageAnimation 72s linear infinite 0s;
-    -ms-animation: imageAnimation 72s linear infinite 0s;
-    animation: imageAnimation 72s linear infinite 0s;
+    -webkit-animation: imageAnimation 60s linear infinite 0s;
+    -moz-animation: imageAnimation 60s linear infinite 0s;
+    -o-animation: imageAnimation 60s linear infinite 0s;
+    -ms-animation: imageAnimation 60s linear infinite 0s;
+    animation: imageAnimation 60s linear infinite 0s;
 
 }
 
@@ -226,23 +226,27 @@ input:-webkit-autofill {
 }
 .cb-slideshow li:nth-child(2) {
     background-image: url(../images/back2.jpg);
-    -webkit-animation-delay: 12s;
-    -moz-animation-delay: 12s;
-    -o-animation-delay: 12s;
-    -ms-animation-delay: 12s;
-    animation-delay: 12s; 
+    -webkit-animation-delay: 15s;
+    -moz-animation-delay: 15s;
+    -o-animation-delay: 15s;
+    -ms-animation-delay: 15s;
+    animation-delay: 15s;
 }
 .cb-slideshow li:nth-child(3) { 
     background-image: url(../images/back3.jpg);
-    -webkit-animation-delay: 24s;
-    -moz-animation-delay: 24s;
-    -o-animation-delay: 24s;
-    -ms-animation-delay: 24s;
-    animation-delay: 24s; 
+    -webkit-animation-delay: 30s;
+    -moz-animation-delay: 30s;
+    -o-animation-delay: 30s;
+    -ms-animation-delay: 30s;
+    animation-delay: 30s;
 }
 .cb-slideshow li:nth-child(4) { 
     background-image: url(../images/back4.jpg);
-    animation-delay: 10s;
+  -webkit-animation-delay: 40s;
+  -moz-animation-delay: 40s;
+  -o-animation-delay: 40s;
+  -ms-animation-delay: 40s;
+    animation-delay: 40s;
 }
 /*.cb-slideshow li:nth-child(5) { */
 /*    background-image: url(/images/back5.jpg);*/
@@ -259,16 +263,16 @@ input:-webkit-autofill {
 	    opacity: 0;
 	    animation-timing-function: ease-in;
 	}
-	8% {
+	10% {
 	    opacity: 1;
 	    transform: scale(1.15);
 	    animation-timing-function: ease-out;
 	}
-	17% {
+	20% {
 	    opacity: 1;
 	    transform: scale(1.20);
 	}
-	25% {
+	40% {
 	    opacity: 0;
 	    transform: scale(1.40);
 	}
