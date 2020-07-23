@@ -87,15 +87,15 @@
                         <path fill="${this.settings.frameFill}" d="${this.paths.initial}"/>
                     </clipPath>
                 </defs>
-                <image xlink:href="images/photoImg/bk3.jpg" clip-path="url(#shape__clip)" x="0" y="0" width="${imgFillSize.width}px" height="${imgFillSize.height}px"/>
+                <image xlink:href="images/photoBack/bk2.jpg" clip-path="url(#shape__clip)" x="0" y="0" width="${imgFillSize.width}px" height="${imgFillSize.height}px"/>
             `;
             this.DOM.el.insertBefore(this.DOM.svg, this.DOM.titles);
             this.DOM.shape = this.DOM.svg.querySelector('path');
             this.DOM.imgFill = this.DOM.svg.querySelector('image');
         }
         calculateImgFillSizes() {
-            const ratio = Math.max(this.rect.width / 1920, this.rect.height / 1140);
-            return {width: 1920*ratio, height: 1140*ratio};
+            const ratio = Math.max(this.rect.width / 1920, this.rect.height / 1080);
+            return {width: 1920*ratio, height: 1080*ratio};
         }
         updateFrame() {
             this.paths.initial = this.calculatePath('initial');

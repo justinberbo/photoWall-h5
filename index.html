@@ -2,7 +2,7 @@
 <!doctype html>
 <head>
   <meta charset="utf-8">
-  <title>网站</title>
+  <title>photoWall</title>
   <link rel="shortcut icon" href="images/logo.ico" type="image/x-icon" />
   <link href="css/index/index-common.css" rel="stylesheet" type="text/css">
   <link href="css/index/index-pc-style.css" rel="stylesheet" type="text/css">
@@ -59,48 +59,49 @@
     <div class="searchF">
       <input type="text" name="key" class="textKey" placeholder="请输入关键词搜索" autocomplete="off">
       <div class="txt">高级站内搜索</div>
-      <input type="submit"  onclick="search()" class="soBut " value="搜索">
+      <input type="submit"  onclick="getPersonage()" class="soBut " value="搜索">
     </div>
+    <div class="hotSearch"><p>热门搜索<a id="hot1"></a> <a id="hot2"></a> <a id="hot3"></a> <a id="hot4"></a> <a id="hot5"></a></p></div>
   </div>
   <!---背景+搜索框+LOGO end--->
 
   <!--人物 -->
   <div class="TrainItem">
     <h2 class="title-text">热门人物</h2>
-    <a href="" class="item" id="item0">
+    <a href="photo.html?name=作者" class="item" id="item0">
       <div class="ico"><img src="images/avatar/avt0.jpg"></div>
       <div class="title">作者</div>
     </a>
-    <a href="" class="item" id="item1">
+    <a href="photo.html?name=周杰伦" class="item" id="item1">
       <div class="ico"><img src="images/avatar/avt1.jpeg"></div>
       <div class="title">周杰伦</div>
     </a>
 
-    <a href="" class="item" id="item2">
-      <div class="ico"><img src="images/avatar/avt2.jpeg"></div>
-      <div class="title">国漫</div>
+    <a href="photo.html?name=利威尔·阿克曼" class="item" id="item2">
+      <div class="ico"><img src="images/avatar/avt8.jpeg"></div>
+      <div class="title">利威尔·阿克曼</div>
     </a>
 
-    <a href="" class="item" id="item3">
+    <a href="photo.html?name=蒙奇·D·路飞" class="item" id="item3">
       <div class="ico"><img src="images/avatar/avt3.jpeg"></div>
       <div class="title">蒙奇·D·路飞</div>
     </a>
 
-    <a href="" class="item" id="item4">
+    <a href="photo.html?name=佩恩" class="item" id="item4">
       <div class="ico"><img src="images/avatar/avt4.jpeg"></div>
       <div class="title">佩恩</div>
     </a>
 
-    <a href="" class="item" id="item5">
+    <a href="photo.html?name=罗罗诺亚·索隆" class="item" id="item5">
       <div class="ico"><img src="images/avatar/avt5.jpg"></div>
       <div class="title">罗罗诺亚·索隆</div>
     </a>
 
-    <a href="" class="item" id="item6">
+    <a href="photo.html?name=MichaelJordan" class="item" id="item6">
       <div class="ico"><img src="images/avatar/avt6.jpg"></div>
       <div class="title">Michael Jordan</div>
     </a>
-    <a href="" class="item" id="item7">
+    <a href="photo.html?name=雷姆" class="item" id="item7">
       <div class="ico"><img src="images/avatar/avt7.jpeg"></div>
       <div class="title">雷姆</div>
     </a>
@@ -174,10 +175,12 @@
   <div class="options">
 
 <!--    1-->
-    <div class="option " style="background:url(images/back1.jpg);">
-      <div class="shadow"></div>
-      <div class="label">
-        <div class="icon"> 
+    <div class="option " style="background:url(images/collectionBack/b3.jpg);">
+      <div class="shadow">
+        <div class="goto"><a href="photo.html?collectionId=1"><img src="images/ico2.ico"></a></div>
+      </div>
+      <div class="label" >
+        <div class="icon">
 <!--          <i class="fas fa-walking"></i> -->
           <img src="images/author/author1.jpg" height="40" width="40" style="border-radius: 50%">
         </div>
@@ -189,8 +192,10 @@
     </div>
 
 <!--    2-->
-    <div class="option" style="background:url(images/back3.jpg);">
-      <div class="shadow"></div>
+    <div class="option" style="background:url(images/collectionBack/b2.jpg);">
+      <div class="shadow">
+        <div class="goto"><a href="photo.html?collectionId=1"><img src="images/ico2.ico"></a></div>
+      </div>
       <div class="label">
         <div class="icon"> <img src=" images/author/author2.jpeg" height="40" width="40" style="border-radius: 50%"> </div>
         <div class="info">
@@ -200,35 +205,40 @@
       </div>
     </div>
 <!--    3-->
-    <div class="option active" style="background:url(images/back2.jpg);">
-      <div class="shadow"></div>
+    <div class="option active" style="background:url(images/collectionBack/b9.jpeg);">
+      <div class="shadow">
+        <div class="goto"><a href="photo.html?collectionId=3"><img src="images/ico2.ico"></a></div>
+      </div>
       <div class="label">
         <div class="icon"> <img src="images/avatar/avt0.jpg" height="40" width="40" style="border-radius: 50%"></div>
         <div class="info">
           <div class="main">来自作者</div>
-          <div class="sub">少儿不宜，你懂的</div>
+          <div class="sub">教练我想打球</div>
         </div>
       </div>
     </div>
 <!--    4-->
-    <div class="option" style="background:url(images/back4.jpg);">
-      <div class="shadow"></div>
+    <div class="option" style="background:url(images/collectionBack/b1.jpeg);">
+      <div class="shadow">
+      <div class="goto"><a href="photo.html?collectionId=4"><img src="images/ico2.ico"></a></div></div>
       <div class="label">
         <div class="icon"> <img src="images/author/author4.jpg" height="40" width="40" style="border-radius: 50%"> </div>
         <div class="info">
           <div class="main">来自帅气的伍六七</div>
-          <div class="sub">潮流发型大全</div>
+          <div class="sub">一袋米要扛几楼</div>
         </div>
       </div>
     </div>
 <!--    5-->
-    <div class="option" style="background:url(images/back3.jpg);">
-      <div class="shadow"></div>
+    <div class="option" style="background:url(images/collectionBack/b4.jpg);">
+      <div class="shadow">
+        <div class="goto"><a href="photo.html?collectionId=1"><img src="images/ico2.ico"></a></div>
+      </div>
       <div class="label">
         <div class="icon"> <img src="images/author/author3.jpg" height="40" width="40" style="border-radius: 50%"> </div>
         <div class="info">
           <div class="main">来自梅花十三</div>
-          <div class="sub">海滩泳装..</div>
+          <div class="sub">潮流发型大全..</div>
         </div>
       </div>
     </div>
@@ -240,13 +250,13 @@
   <div class="ewmShow">
 
     <div class="es">
-      <img src="images/wx0.01.png">
-      <span>打赏作者0.01</span>
+      <img src="images/wxcode.png">
+      <span>添加作者微信</span>
     </div>
-    <div class="es">
-      <img src="images/zfb0.01.png">
-      <span>打赏作者0.01</span>
-    </div>
+<!--    <div class="es">-->
+<!--      <img src="images/zfb0.01.png">-->
+<!--      <span>打赏作者0.01</span>-->
+<!--    </div>-->
 
   </div>
 
@@ -261,8 +271,8 @@
         </dl>
       </div>
       <div class="fright">
-        <div class="telname">页面已被访问10次</div>
-        <a href="" class="tel">感谢您的访问</a>
+        <div class="telname">页面已被访问<span id="count">10</span>次</div>
+        <a  class="tel">感谢您的访问</a>
       </div>
     </div>
   </footer>
@@ -270,7 +280,7 @@
 
 <div class="FullWeb pdis">
   <div class="GlobalMask"></div>
-  <img src="images/back/b1.jpg" class="BackgroundImg">
+  <img src="images/back/indexb.jpg" class="BackgroundImg">
 </div>
 
 
@@ -296,8 +306,11 @@
 <script type="text/javascript" src="js/ajax.js"></script>
 <script>
   window.onload=function () {
-    var  id=localStorage.getItem("uuid")
-    alert(id)
+    // count();
+    // var  id=localStorage.getItem("uuid")
+    // alert(id)
+    hot();
+
   };
 
 </script>

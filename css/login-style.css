@@ -222,10 +222,10 @@ input:-webkit-autofill {
 
 
 .cb-slideshow li:nth-child(1) { 
-    background-image: url(../images/back1.jpg)
+    background-image: url(../images/back/back1.jpg)
 }
 .cb-slideshow li:nth-child(2) {
-    background-image: url(../images/back2.jpg);
+    background-image: url(../images/back/back2.jpg);
     -webkit-animation-delay: 15s;
     -moz-animation-delay: 15s;
     -o-animation-delay: 15s;
@@ -233,7 +233,7 @@ input:-webkit-autofill {
     animation-delay: 15s;
 }
 .cb-slideshow li:nth-child(3) { 
-    background-image: url(../images/back3.jpg);
+    background-image: url(../images/back/back3.jpg);
     -webkit-animation-delay: 30s;
     -moz-animation-delay: 30s;
     -o-animation-delay: 30s;
@@ -241,7 +241,7 @@ input:-webkit-autofill {
     animation-delay: 30s;
 }
 .cb-slideshow li:nth-child(4) { 
-    background-image: url(../images/back4.jpg);
+    background-image: url(../images/back/back4.jpg);
   -webkit-animation-delay: 40s;
   -moz-animation-delay: 40s;
   -o-animation-delay: 40s;
@@ -278,7 +278,6 @@ input:-webkit-autofill {
 	}
 	100% { opacity: 0 }
 }
-
 
 @media screen and (max-width: 1140px) { 
     .cb-slideshow li div h3 { font-size: 140px }

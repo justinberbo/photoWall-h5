@@ -154,6 +154,17 @@ body {
     transition: 0.5s cubic-bezier(0.05, 0.61, 0.41, 0.95);
 }
 
+.goto{
+    height: 35px;
+    width: 35px;
+    float: right;
+    margin-top: 70px;
+    margin-right: 15px;
+
+}
+.goto a{
+    cursor:e-resize;
+}
 .options .option .label {
     display: flex;
     position: absolute;
@@ -196,4 +207,8 @@ body {
 
 .options .option .label .info .sub {
     transition-delay: .1s;
+}
+.sub a{
+    font-size: 15px;
+    color: #000;
 }

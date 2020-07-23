@@ -4,7 +4,8 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>photoWall</title>
+  <title>photoWall-登录</title>
+  <link rel="shortcut icon" href="images/logo.ico" type="image/x-icon" />
   <link rel="stylesheet" href="css/common/bootstrap.min.css">
   <link rel="stylesheet" href="css/login-common.css">
   <link rel="stylesheet" href="css/login-style.css">
@@ -25,10 +26,6 @@
       <header class="mb-5">
         <h1></h1>
       </header>
-<!--      <P class="mb-5">年少不经事，埋头编程忙。</P>-->
-<!--      <P class="mb-5">指键铿锵落，不及细思量。</P>-->
-<!--      <P class="mb-5">bug千百个，comment无一行。</P>-->
-<!--      <P class="mb-5">休言敏捷易，做来断人肠.</P>-->
         <div class="  form-section">
           <div class="col-md-7 col-sm-7 col-xs-7">
             <input name="email" type="email"
@@ -55,7 +52,7 @@
 <script src="js/login.js"></script>
 <script src="js/ajax.js"></script>
 <script>function go() {
-  localStorage.setItem("userToken","")
+  localStorage.setItem("uuid","0")
     $(location).attr('href', '/photoWall/index.html');
 
 }</script>

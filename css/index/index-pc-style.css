@@ -368,7 +368,7 @@
   }
 
   footer .fdiv .fleft a {
-    color: #E1E1E1;
+    color: #ffffff;
   }
 
   footer .fdiv .fleft dl {
@@ -376,7 +376,7 @@
     height: auto;
     font: 14px/22px 'microsoft yahei';
     padding-top: 15px;
-    color: #dcdcdc;
+    color: #00f0ff;
   }
 
   footer .fdiv .fleft dl p {
@@ -394,7 +394,7 @@
     width: 100%;
     height: 40px;
     font: 15px/50px 'microsoft yahei';
-    color: #c5c6c7;
+    color:  #FFF;
     text-align: right;
   }
 
@@ -404,7 +404,7 @@
     height: 60px;
     font: 35px/50px 'microsoft yahei';
     font-style: italic;
-    color: #FFF;
+    color: #c5c6c7;
     text-align: right;
   }
 
@@ -423,5 +423,19 @@
   /*  display: none;*/
   /*}*/
 
+.hotSearch {
+  margin: 10px auto auto 250px;
+  color: #00ff97;
+  font-size: 15px;
+}
 
+.hotSearch a{
+  margin:  auto 5px auto 15px;
+
+}
+
+.hotSearch a:hover{
+  text-decoration: underline;
+  cursor: pointer;
+}
 /*}*/
