@@ -1,6 +1,5 @@
 
-// var  url="http://localhost:80/api/";
-var  url="http://47.103.218.59/:80/api/";
+var  url="http://www.codeeyes.cn:80/api/";
 // 注册
 function register() {
 
@@ -130,17 +129,18 @@ function showPersonages(array){
     case 4:$("#item2").css('display','none');
     case 5:$("#item7").css('display','none');
     case 6:$("#item1").css('display','none');
-    case 7:$("#item8").css('display','none');
+    case 7:$("#item4").css('display','none');
+
 
   }
   switch (item) {
-    case 7:  $("#item8 .title ").html(array[6].name);$("#item0 .ico img").attr("src",array[6].avatar);$("#item8").attr("href","show.html"+"?name="+encodeURI(array[6].name))
+    case 8:$("#item4 .title ").html(array[6].name);$("#item4 .ico img").attr("src",array[6].avatar);$("#item4").attr("href","show.html"+"?name="+encodeURI(array[6].name))
     case 6:$("#item1 .title ").html(array[5].name);$("#item1 .ico img").attr("src",array[5].avatar);$("#item1").attr("href","show.html"+"?name="+encodeURI(array[5].name))
     case 5:$("#item7 .title ").html(array[4].name);$("#item7 .ico img").attr("src",array[4].avatar);$("#item7").attr("href","show.html"+"?name="+encodeURI(array[4].name))
     case 4:$("#item2 .title ").html(array[3].name);$("#item2 .ico img").attr("src",array[3].avatar);$("#item2 ").attr("href","show.html"+"name="+encodeURI(array[3].name))
     case 3:$("#item3 .title ").html(array[2].name);$("#item3 .ico img").attr("src",array[2].avatar);$("#item3").attr("href","show.html"+"?name="+encodeURI(array[2].name))
     case 2:$("#item6 .title ").html(array[1].name);$("#item6 .ico img").attr("src",array[1].avatar);$("#item6").attr("href","show.html"+"?name="+encodeURI(array[1].name))
-    case 1:$("#item4 .title ").html(array[0].name);$("#item4 .ico img").attr("src",array[0].avatar);$("#item4").attr("href","show.html"+"?name="+encodeURI(array[0].name))
+    case 1:$("#item5 .title ").html(array[0].name);$("#item5 .ico img").attr("src",array[0].avatar);$("#item5").attr("href","show.html"+"?name="+encodeURI(array[0].name))
   }
 }
 

@@ -27,11 +27,11 @@
 		<div class="content content--fixed">
 			<header class="codrops-header">
 				<a href=""><img src="images/ico1.ico"></a>
-					<div style="margin-left: 30px; cursor: pointer"></a><a>登入</a><a>|注册</a></div>
+					<div style="margin-left: 30px; cursor: pointer"><a href="login.html">登入</a><a href="login.html">|注册</a></div>
 
 
 			</header>
-			<a class="github" href="https://github.com/codrops/AnimatedFrameSlideshow/" target="_blank" title="Find this project on GitHub"><svg class="icon icon--github"><use xlink:href="#icon-github"></use></svg></a>
+			<a class="github" href="https://github.com/justinberbo/" target="_blank" title="Find this project on GitHub"><svg class="icon icon--github"><use xlink:href="#icon-github"></use></svg></a>
 
 
 		</div>
@@ -57,27 +57,27 @@
 			<div class="slides slides--titles">
 				<div class="slide slide--current">
 					<h2 >codeeyes.cn</h2>
-					<h4><a>下载图片</a></h4>
+					<h4 onclick="download()"><a>下载图片</a></h4>
 				</div>
 				<div class="slide">
 					<h2 >codeeyes.cn</h2>
-					<h4><a>下载图片</a></h4>
+					<h4 onclick="download()"><a>下载图片</a></h4>
 				</div>
 				<div class="slide">
 					<h2 >codeeyes.cn</h2>
-					<h4><a>下载图片</a></h4>
+					<h4 onclick="download()"><a>下载图片</a></h4>
 				</div>
 				<div class="slide">
 					<h2 >codeeyes.cn</h2>
-					<h4><a>下载图片</a></h4>
+					<h4 onclick="download()"><a>下载图片</a></h4>
 				</div>
 				<div class="slide">
 					<h2 >codeeyes.cn</h2>
-					<h4><a>下载图片</a></h4>
+					<h4 onclick="download()"><a>下载图片</a></h4>
 				</div>
 				<div class="slide">
 					<h2 >codeeyes.cn</h2>
-					<h4><a>下载图片</a></h4>
+					<h4 onclick="download()"><a>下载图片</a></h4>
 				</div>
 			</div>
 
@@ -102,15 +102,22 @@
 		var spit = loc.indexOf('=');
 		var id= loc.substr(spit+1,length-spit);
 if(id.length>1||id>5||id<1){
-	id=1
+	id=3
 }
-alert(id)
 		$(".slides--images .slide:nth-child(1)").find(".slide__img").css('background-image', 'url(images/photoBack/' +id+ '/b1.jpg)')
 		$(".slides--images .slide:nth-child(2)").find(".slide__img").css('background-image', 'url(images/photoBack/' +id+ '/b2.jpg)')
 		$(".slides--images .slide:nth-child(3)").find(".slide__img").css('background-image', 'url(images/photoBack/' +id+ '/b3.jpg)')
 		$(".slides--images .slide:nth-child(4)").find(".slide__img").css('background-image', 'url(images/photoBack/' +id+ '/b4.jpg)')
 		$(".slides--images .slide:nth-child(5)").find(".slide__img").css('background-image', 'url(images/photoBack/' +id+ '/b5.jpg)')
 	});
+</script>
+<script>
+	function download() {
+		var  id=localStorage.getItem("uuid")
+		if(id=null||id==0){
+			alert("请先登入")
+		}
+	}
 </script>
 </body>
 </html>
