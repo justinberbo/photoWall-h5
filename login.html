@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>photoWall-登录</title>
+  <title>-登录</title>
   <link rel="shortcut icon" href="images/logo.ico" type="image/x-icon" />
   <link rel="stylesheet" href="css/common/bootstrap.min.css">
   <link rel="stylesheet" href="css/login-common.css">
@@ -24,14 +24,15 @@
   <div class="row cb-slideshow-text-container ">
     <div class="tm-content col-xl-6 col-sm-8 col-xs-8 ml-auto section">
       <header class="mb-5">
-        <h1></h1>
+        <h1>维护中！！！</h1>
+        <h3>仅壁纸可用</h3>
+        <h3>数据库维护中，请勿登录注册。</h3>
       </header>
         <div class="  form-section">
           <div class="col-md-7 col-sm-7 col-xs-7">
             <input name="email" type="email"
                    class="form-control" id="login_name"
-                   placeholder="Your Email..." required/>
-            <input name="password" type="password" placeholder="password" class="form-control" id="password" required/>
+                   placeholder="你的名字..." required onkeyup="this.value=this.value.replace(/\s+/g,'')"/>
           </div>
           <div class="col-md-7 col-sm-7 col-xs-7">
             <div class="buttons">
@@ -52,8 +53,12 @@
 <script src="js/login.js"></script>
 <script src="js/ajax.js"></script>
 <script>function go() {
-  localStorage.setItem("uuid","0")
+  var name=$("#login_name").val();
+  if (name==null ||name==''){
+    alert("你的名字！！！")
+  }else {
+    localStorage.setItem("name", name)
     $(location).attr('href', '/photoWall/index.html');
-
+  }
 }</script>
 </html>
